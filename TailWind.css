@@ -590,6 +590,10 @@ video {
   width: 100vw;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .max-w-\[800px\] {
   max-width: 800px;
 }
