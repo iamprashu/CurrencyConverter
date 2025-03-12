@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TailWind.css">
+    <link rel="stylesheet" href="plugin.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <div class="bg-[url(bg.png)] bg-cover h-screen w-screen flex items-center justify-around">
+
+            <div class="MainBox h-[600px] bg-black/20 w-[800px]  rounded-xl text-white  flex flex-col justify-evenly items-center p-2 backdrop-blur-sm">
+
+                <div class="grid grid-flow-col grid-cols-2  gap-20">
+
+                    <div class="bg-slate-300/40 h-[300px] w-[300px] p-5 rounded-xl flex flex-col  justify-evenly items-center backdrop-blur-md" >
+                        <img src="https://flagsapi.com/US/shiny/64.png" class="fromImage" height="50px" width="50px">
+                        <h1>Enter Amount</h1>
+                        <input type="text" class="h-[40px] w-[150px] rounded-xl p-2 bg-slate-600/20 backdrop-blur-xl text-black font-[800]">
+                        <p>Select Country</p>
+                        <select class="FromSelect bg-slate-400/20 p-1 w-[200px] backdrop-blur-lg text-black rounded-lg" name="from" id="" >
+                            
+                        </select>
+
+                    </div>
+                    <div class="bg-slate-300/40 h-[300px] w-[300px] p-5 rounded-xl flex flex-col  justify-evenly items-center backdrop-blur-md" >
+                    <img src="https://flagsapi.com/US/shiny/64.png" class="fromImage" height="50px" width="50px">
+                    <h1>Enter Amount</h1>
+                    <input type="text" class="h-[40px] w-[150px] rounded-xl p-2 bg-slate-600/20 backdrop-blur-xl text-black font-[800]">
+                    <p>Select Country</p>
+                    <select class="FromSelect bg-slate-400/20 p-1 w-[200px] backdrop-blur-lg text-black rounded-lg" name="from" id="" >
+                        
+                    </select>
+
+                </div>
+                </div>
+
+                <div class="DisplayBox w-[500px] bg-slate-800 h-[150px] rounded-xl p-10">
+                    <div class="ButtonBar">
+                        <button class="bg-slate-400 pt-2 pb-2 pl-4 pr-4 rounded-2xl">Calculate</button>
+                        <button class="bg-slate-400 pt-2 pb-2 pl-4 pr-4 rounded-2xl">Calculate</button>
+                    </div>
+                </div>
+
+            </div>
+    </div> 
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
