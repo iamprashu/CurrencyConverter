@@ -8,38 +8,40 @@
     <title>Main Page</title>
 </head>
 <body>
-    <div class="bg-[url(bg.png)] bg-cover h-screen w-screen flex items-center justify-around">
+    <!--  -->
+    <div class="bg-[url(bg.jpg)] bg-cover h-screen w-screen flex items-center justify-around bg-no-repeat bg-cover">
 
-            <div class="MainBox h-[600px] bg-black/20 w-[800px]  rounded-xl text-white  flex flex-col justify-evenly items-center p-2 backdrop-blur-sm">
+            <div class="MainBox h-auto bg-black/25 max-w-[800px]  gap-5 rounded-xl text-white  flex flex-col flex-wrap justify-evenly items-center p-3 backdrop-blur-sm">
 
-                <div class="grid grid-flow-col grid-cols-2  gap-20">
+                <div class="grid  grid-cols-2  gap-10 grid-flow-row">
 
-                    <div class="bg-slate-300/40 h-[300px] w-[300px] p-5 rounded-xl flex flex-col  justify-evenly items-center backdrop-blur-md" >
+
+                    <div class="bg-black/40 h-auto w-auto p-5 rounded-xl flex flex-col   gap-2 items-center backdrop-blur-md" >
+                        <p>From Country</p>
                         <img src="https://flagsapi.com/US/shiny/64.png" class="fromImage" height="50px" width="50px">
                         <h1>Enter Amount</h1>
-                        <input type="text" class="h-[40px] w-[150px] rounded-xl p-2 bg-slate-600/20 backdrop-blur-xl text-black font-[800]">
-                        <p>Select Country</p>
-                        <select class="FromSelect bg-slate-400/20 p-1 w-[200px] backdrop-blur-lg text-black rounded-lg" name="from" id="" >
+                        <input type="text" id = "fromAmt" class="h-[40px] w-[150px] rounded-xl p-2 bg-black/20 backdrop-blur-xl text-white font-[800]">
+                        
+                        <select name = "from" class="FromSelect bg-black/20 p-1 w-[200px] backdrop-blur-lg text-white text-[500] font-medium rounded-lg" name="from" id="" >
                             
                         </select>
 
                     </div>
-                    <div class="bg-slate-300/40 h-[300px] w-[300px] p-5 rounded-xl flex flex-col  justify-evenly items-center backdrop-blur-md" >
-                    <img src="https://flagsapi.com/US/shiny/64.png" class="fromImage" height="50px" width="50px">
-                    <h1>Enter Amount</h1>
-                    <input type="text" class="h-[40px] w-[150px] rounded-xl p-2 bg-slate-600/20 backdrop-blur-xl text-black font-[800]">
-                    <p>Select Country</p>
-                    <select class="FromSelect bg-slate-400/20 p-1 w-[200px] backdrop-blur-lg text-black rounded-lg" name="from" id="" >
-                        
+                    <div class="bg-black/40 h-auto w-auto p-5 rounded-xl flex flex-col  justify-evenly items-center backdrop-blur-md" >
+                        <img src="https://flagsapi.com/IN/shiny/64.png" class="fromImage" height="80px" width="80px">
+                    
+                        <p>Convert to</p>
+                        <select name="to" class="toSelect bg-black/20 p-1 w-[200px] backdrop-blur-lg  text-white text-[500] font-medium rounded-lg" name="to" id="" >
+                            
                     </select>
 
                 </div>
                 </div>
 
-                <div class="DisplayBox w-[500px] bg-slate-800 h-[150px] rounded-xl p-10">
+                <div class="DisplayBox w-auto bg-black/40 backdrop-blur-sm h-auto rounded-xl p-10 flex gap-2 flex-col justify-around items-center">
+                    <h2 id="displayData" class="text-2xl font-medium">1 USD = 80 INR</h2>
                     <div class="ButtonBar">
-                        <button class="bg-slate-400 pt-2 pb-2 pl-4 pr-4 rounded-2xl">Calculate</button>
-                        <button class="bg-slate-400 pt-2 pb-2 pl-4 pr-4 rounded-2xl">Calculate</button>
+                        <button class=" mainButton  bg-black pt-2 pb-2 pl-4 pr-4 rounded-2xl">Click To Convert</button>
                     </div>
                 </div>
 
